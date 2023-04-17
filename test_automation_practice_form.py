@@ -26,8 +26,3 @@ def test_fill_out_the_form():
     browser.element('[id="city"]').click().element(by.xpath("//*[.='Karnal']")).click()
     browser.element('[id="submit"]').click()
     browser.element(by.xpath("//div[@class='modal-content']")).should(be.present)
-
-
-
-
-
