@@ -27,7 +27,7 @@ def test_fill_out_the_form():
 
     browser.element('#subjectsInput').click().send_keys('English').press_enter()
 
-    browser.element(by.xpath("//label[.='Reading']")).click()
+    browser.all('.custom-checkbox').element_by(have.exact_text('Reading')).click()
 
     browser.element('#uploadPicture').type(
         os.getcwd() + '/resources/1570735001190494352.jpg'
